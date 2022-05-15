@@ -16,7 +16,7 @@ const deploy = async () => {
   const result = await new web3.eth.Contract(JSON.parse(interface))
     .deploy({
       data: bytecode,
-      arguments: ["Hi there!"],
+      // arguments: ["Hi there!"], //use for Inbox Contract
     })
     .send({ gas: 1000000, from: accountList[0] });
   provider.engine.stop(); // stop in terminal

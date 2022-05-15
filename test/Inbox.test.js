@@ -8,7 +8,7 @@ const Web3 = require("web3");
 //connect Web3 to local Test nerwork
 //provide like "a phone help 2 people communication"
 const web3 = new Web3(ganache.provider()); // send ganache.provider which help web3 comunicate with ganache
-const { bytecode, interface } = require("../compile");
+const { bytecode, interface } = require("../compile"); // interface is ABI, bytecode will be saved in data instance contract on network
 
 let accountList;
 let inbox;
